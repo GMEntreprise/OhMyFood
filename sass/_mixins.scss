@@ -1,0 +1,84 @@
+// MIXINS
+
+// Box-Shadow
+@mixin shadow {
+  box-shadow: 1px 11px 14px 0px rgba(109, 109, 109, 0.699);
+}
+@mixin shadow-works {
+  box-shadow: 0px 5px 15px 2px #d6d6d6;
+}
+
+// Génral Mixins
+
+@mixin flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// NAVBAR
+
+@mixin header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 5px 2px -1px #5651511f;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+//   Location
+
+@mixin locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+//   Reserve
+
+@mixin reserves {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: $backgroud;
+  padding: 1.5rem;
+}
+
+// How it works
+
+@mixin work-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin works-items {
+  display: flex;
+  align-items: center;
+  background-color: $backgroud;
+  padding: 0.7rem;
+  border-radius: 20px;
+  margin-bottom: 2em;
+  transition: all 0.5s;
+  position: relative;
+}
+@mixin numbers {
+  text-align: center;
+  border: 1px solid;
+  background-color: #9356dc;
+  border-radius: 30px;
+  padding: 5px;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: -15px;
+}
+
+@mixin works-icons {
+  margin: 20px;
+  font-size: 20px;
+  color: #7e7e7e;
+}
