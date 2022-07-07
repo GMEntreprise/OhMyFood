@@ -1,0 +1,53 @@
+// NAVBAR
+
+@media screen and (max-width: 992px) {
+  header {
+    @include header;
+  }
+}
+
+// responsive location
+@media screen and (max-width: 992px) {
+  .location {
+    @include locations;
+    input {
+      font-size: 18px;
+      border: none;
+      background-color: $lightgrey;
+      text-align: center;
+    }
+  }
+}
+// responsive that suits you
+@media screen and (max-width: 992px) {
+  .explorer {
+    @include reserves;
+
+    h1 {
+      margin: 0;
+      font-weight: 900;
+      font-size: 1.4rem;
+    }
+    p {
+      font-size: medium;
+      color: #595959;
+      margin-bottom: 2rem;
+    }
+  }
+}
+// responsive how it works
+@media screen and (max-width: 992px) {
+  .works-list {
+    @include work-list;
+    &__card {
+      @include shadow-works;
+      @include works-items;
+      .number {
+        @include numbers;
+      }
+      i {
+        @include works-icons;
+      }
+    }
+  }
+}

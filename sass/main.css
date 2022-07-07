@@ -451,13 +451,25 @@ header {
 .restaurants_article .restaurants_article_desc p {
   margin: 6px 2px;
 }
-.restaurants_article .restaurants_article_desc .full-heart {
+.restaurants_article .restaurants_article_desc .fa-heart {
   position: absolute;
   right: 20px;
   top: 15px;
   font-size: 25px;
   transition: all 1s;
   cursor: pointer;
+}
+.restaurants_article .restaurants_article_desc .fa-solid {
+  background: linear-gradient(20deg, #ff99e2 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 0.7s;
+}
+.restaurants_article .restaurants_article_desc .fa-solid:hover {
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 @media screen and (max-width: 992px) {
