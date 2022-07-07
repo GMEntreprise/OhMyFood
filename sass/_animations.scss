@@ -1,0 +1,92 @@
+// Keyframe page content
+
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: $color-secondary;
+    text-shadow: 0 0 7px $color-primary;
+  }
+  90% {
+    color: $color-tertiary;
+    text-shadow: none;
+  }
+  100% {
+    color: $color-secondary;
+    text-shadow: 0 0 7px $color-tertiary;
+  }
+}
+
+// letter child
+.loading {
+  &-letters:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  &-letters:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  &-letters:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  &-letters:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  &-letters:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  &-letters:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  &-letters:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  &-letters:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+  &-letters:nth-child(9) {
+    animation-delay: 0.9s;
+  }
+  &-letters:nth-child(10) {
+    animation-delay: 1s;
+  }
+}
+// Loader
+
+.loader {
+  &-quart {
+    @include loader;
+    margin-right: 2rem;
+  }
+}
+.loader::before {
+  @include loader;
+  background-color: $color-secondary;
+  margin: 0 auto;
+}
+.loader::after {
+  @include loader;
+  background-color: $color-tertiary;
+  margin: 0 auto;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+}
