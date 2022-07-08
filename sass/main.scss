@@ -8,18 +8,7 @@
 
 // Loading
 .loading {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  opacity: 0.9;
-  animation: disappear 2s 3s forwards;
-  transform-origin: top;
-
+  @include loading;
   &-letters {
     color: $color-primary;
     font-size: 80px;
@@ -181,6 +170,7 @@ header {
 
 .restaurants {
   padding: 20px;
+  margin-bottom: 50px;
   background-color: $backgroud;
   &_articles {
     display: grid;
@@ -217,14 +207,7 @@ header {
         border-radius: 15px 15px 0 0;
       }
       span {
-        position: absolute;
-        color: #2c9c81;
-        background-color: $color-tertiary;
-        right: 20px;
-        top: 10px;
-        padding: 5px;
-        font-size: 14px;
-        font-weight: bold;
+        @include new;
       }
     }
     .restaurants_article_desc {
@@ -239,12 +222,7 @@ header {
         margin: 6px 2px;
       }
       .fa-heart {
-        position: absolute;
-        right: 20px;
-        top: 15px;
-        font-size: 25px;
-        transition: all 1s;
-        cursor: pointer;
+        @include heart;
       }
       .fa-solid {
         background: $linear;
@@ -285,5 +263,35 @@ header {
         }
       }
     }
+  }
+}
+// Footer
+.footer {
+  @include footer;
+  &-items {
+    margin: 5px;
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+    h2 {
+      margin: 5px 0;
+      font-weight: 500;
+      font-family: "Shrikhand", cursive;
+    }
+
+    .fa-solid {
+      margin-right: 5px;
+    }
+    .fa-utensils {
+      margin-right: 10px;
+    }
+  }
+}
+// responsive footer
+
+@media screen and (max-width: 992px) {
+  .footer {
+    align-items: flex-start;
   }
 }

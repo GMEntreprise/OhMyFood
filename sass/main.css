@@ -394,6 +394,7 @@ header {
 }
 .restaurants {
   padding: 20px;
+  margin-bottom: 50px;
   background-color: #f6f6f6;
 }
 .restaurants_articles {
@@ -495,5 +496,36 @@ header {
   .restaurants_article_img img {
     width: 100%;
     height: 175px;
+  }
+}
+.footer {
+  padding: 1rem;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-items {
+  margin: 5px;
+  color: #fff;
+}
+.footer-items:hover {
+  text-decoration: underline;
+}
+.footer-items h2 {
+  margin: 5px 0;
+  font-weight: 500;
+  font-family: "Shrikhand", cursive;
+}
+.footer-items .fa-solid {
+  margin-right: 5px;
+}
+.footer-items .fa-utensils {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    align-items: flex-start;
   }
 }/*# sourceMappingURL=main.css.map */
