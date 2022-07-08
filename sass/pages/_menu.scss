@@ -1,5 +1,60 @@
 // Start menu
+.banner img {
+  width: 100%;
+  object-fit: cover;
+  height: 30vh;
+}
+// title-content
+.principal {
+  @include principal-content;
 
-.img img {
-  max-width: 100%;
+  &-title {
+    position: relative;
+    h1 {
+      font-weight: 400;
+      font-family: "Shrikhand", cursive;
+    }
+    .fa-heart {
+      @include heart;
+      top: 5px;
+    }
+    .fa-solid {
+      @include solid-heart;
+    }
+  }
+}
+// menus-items
+.menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+  row-gap: 20px;
+  &-category {
+    .enter {
+      grid-column: 1/-1;
+    }
+    &_items {
+      background-color: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      cursor: pointer;
+      border-radius: 20px;
+      h4 {
+        margin: 0;
+      }
+    }
+    &_desc {
+      margin: 0;
+    }
+  }
+  h2 {
+    &::after {
+      content: "";
+      display: block;
+      border-bottom: 4px solid $color-tertiary;
+      margin-top: 5px;
+      width: 45px;
+    }
+  }
 }

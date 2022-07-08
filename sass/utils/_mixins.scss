@@ -131,6 +131,17 @@
   transition: all 1s;
   cursor: pointer;
 }
+@mixin solid-heart {
+  background: $linear;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 0.7s;
+  &:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
 
 // footer
 
@@ -140,4 +151,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+// content menu
+
+@mixin principal-content {
+  position: relative;
+  background: #f5f4f4;
+  padding: 1rem;
+  border-radius: 32px 32px 0 0;
+  margin-top: -25px;
 }

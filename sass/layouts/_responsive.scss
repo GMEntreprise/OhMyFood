@@ -98,3 +98,15 @@
     align-items: flex-start;
   }
 }
+
+// Menus items
+
+@media screen and (max-width: 992px) {
+  .menus {
+    grid-template-columns: 1fr;
+    &-category {
+      &_items {
+      }
+    }
+  }
+}

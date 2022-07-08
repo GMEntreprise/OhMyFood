@@ -422,6 +422,80 @@ header {
 }
 
 /******************** Page La palette du goût ***************************/
+.banner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30vh;
+}
+
+.principal {
+  position: relative;
+  background: #f5f4f4;
+  padding: 1rem;
+  border-radius: 32px 32px 0 0;
+  margin-top: -25px;
+}
+.principal-title {
+  position: relative;
+}
+.principal-title h1 {
+  font-weight: 400;
+  font-family: "Shrikhand", cursive;
+}
+.principal-title .fa-heart {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 25px;
+  transition: all 1s;
+  cursor: pointer;
+  top: 5px;
+}
+.principal-title .fa-solid {
+  background: linear-gradient(20deg, #ff99e2 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all 0.7s;
+}
+.principal-title .fa-solid:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.menus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+  row-gap: 20px;
+}
+.menus-category .enter {
+  grid-column: 1/-1;
+}
+.menus-category_items {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.menus-category_items h4 {
+  margin: 0;
+}
+.menus-category_desc {
+  margin: 0;
+}
+.menus h2::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #99e2d0;
+  margin-top: 5px;
+  width: 45px;
+}
+
 @media screen and (max-width: 992px) {
   .loading-letters {
     color: #9356dc;
@@ -536,6 +610,8 @@ header {
     align-items: flex-start;
   }
 }
-.img img {
-  max-width: 100%;
+@media screen and (max-width: 992px) {
+  .menus {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=style.css.map */
