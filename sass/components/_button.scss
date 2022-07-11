@@ -13,3 +13,16 @@
   cursor: pointer;
   transition: transform 300ms;
 }
+
+// Command btn
+
+@mixin command {
+  box-shadow: 1px 5px 9px 0px rgba(109, 109, 109, 0.699);
+  background: $gradient;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+}

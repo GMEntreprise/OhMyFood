@@ -41,7 +41,7 @@
     p {
       font-size: medium;
       color: #595959;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
     }
   }
 }
@@ -104,9 +104,6 @@
 @media screen and (max-width: 992px) {
   .menus {
     grid-template-columns: 1fr;
-    &-category {
-      &_items {
-      }
-    }
+    padding: 0 15px;
   }
 }

@@ -7,6 +7,9 @@
 @mixin shadow-works {
   box-shadow: 0px 5px 15px 2px #d6d6d6;
 }
+@mixin shadow-items {
+  box-shadow: 0 2px 10px 2px #5651511f;
+}
 
 // Génral Mixins
 
@@ -147,13 +150,24 @@
 
 @mixin footer {
   padding: 1rem;
-  background-color: $backgroud-footer;
+  background-color: $darkgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-// content menu
+// content menu items
+
+@mixin menusItems {
+  position: relative;
+  background-color: #fff;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  @include shadow-items;
+}
 
 @mixin principal-content {
   position: relative;
@@ -161,4 +175,24 @@
   padding: 1rem;
   border-radius: 32px 32px 0 0;
   margin-top: -25px;
+}
+
+@mixin border-bottom {
+  &::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid $color-tertiary;
+    margin-top: 5px;
+    width: 45px;
+  }
+}
+@mixin check {
+  background-color: $color-tertiary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  width: 4rem;
+  border-radius: 0 20px 20px 0;
+  margin: -1rem -5rem -1rem 1rem;
 }
