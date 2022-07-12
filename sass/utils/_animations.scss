@@ -99,3 +99,22 @@
     transform: rotate(0);
   }
 }
+
+// Appear page menu
+
+@mixin appear {
+  @for $i from 1 through 9 {
+    &:nth-child(#{$i}) {
+      animation: menuAppear 1s * $i;
+    }
+  }
+}
+
+@keyframes menuAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

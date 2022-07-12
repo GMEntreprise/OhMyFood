@@ -103,7 +103,17 @@
 
 @media screen and (max-width: 992px) {
   .menus {
-    grid-template-columns: 1fr;
-    padding: 0 15px;
+    // grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    &-category {
+      &_description {
+        padding: 11px 12px;
+      }
+      &_price {
+        padding: 14px 12px;
+      }
+    }
   }
 }
