@@ -341,9 +341,6 @@ header {
   color: #7e7e7e;
   transition: all 0.3s;
 }
-.works-list__card i:hover {
-  color: rebeccapurple;
-}
 .works-list__card:hover {
   transform: scale(0.9);
   background-color: rgba(147, 86, 220, 0.2);
@@ -462,6 +459,13 @@ header {
 }
 
 /******************** Page La palette du goût ***************************/
+.container i {
+  position: absolute;
+  left: 26px;
+  top: 22px;
+  font-size: 22px;
+}
+
 .banner img {
   width: 100%;
   -o-object-fit: cover;

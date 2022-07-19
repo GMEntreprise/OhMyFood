@@ -87,9 +87,9 @@ header {
       i {
         @include works-icons;
 
-        &:hover {
-          color: rebeccapurple;
-        }
+        // &:hover {
+        //   color: rebeccapurple;
+        // }
       }
       &:hover {
         transform: scale(0.9);

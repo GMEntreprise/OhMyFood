@@ -1,4 +1,12 @@
 // Start menu
+.container {
+  i {
+    position: absolute;
+    left: 26px;
+    top: 22px;
+    font-size: 22px;
+  }
+}
 .banner img {
   width: 100%;
   object-fit: cover;
