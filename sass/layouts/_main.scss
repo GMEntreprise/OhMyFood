@@ -88,12 +88,12 @@ header {
         @include works-icons;
       }
 
-      & i:hover {
-        color: rgba(116, 0, 255, 0.46);
-      }
       &:hover {
         transform: scale(0.9);
         background-color: rgba(147, 86, 220, 0.2);
+      }
+      &:hover i {
+        color: rgba(116, 0, 255, 0.46);
       }
     }
   }
