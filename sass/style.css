@@ -341,6 +341,9 @@ header {
   color: #7e7e7e;
   transition: all 0.3s;
 }
+.works-list__card i:hover {
+  color: rgba(116, 0, 255, 0.46);
+}
 .works-list__card:hover {
   transform: scale(0.9);
   background-color: rgba(147, 86, 220, 0.2);
