@@ -6,7 +6,6 @@ Troisième projet du parcours "Développeur web" chez OpenClassroom. L'objectif 
 
 Vous pouvez retrouver [Le brief complet ici.](https://github.com/GMEntreprise/OhMyFood/files/9149204/DW%2BP3%2B-%2BBrief%2Bcreatif%2B-%2BOhmyfood.pdf)
 
-https://github.com/GMEntreprise/OhMyFood
 ---
 
 ![screenshot](https://user-images.githubusercontent.com/105996772/179969079-5605cc7f-cffc-4baf-bbe3-79a41f3403b6.png)
