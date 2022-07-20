@@ -9,6 +9,9 @@ Vous pouvez retrouver [Le brief complet ici.](https://github.com/GMEntreprise/Oh
 https://github.com/GMEntreprise/OhMyFood
 ---
 
+![screenshot](https://user-images.githubusercontent.com/105996772/179969079-5605cc7f-cffc-4baf-bbe3-79a41f3403b6.png)
+
+
 ## Objectifs
 
     Développer un site proposant le menu de 4 grands restaurants parisiens.
