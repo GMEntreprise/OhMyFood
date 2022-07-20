@@ -16,7 +16,7 @@ Pages à intégrer selon les maquettes
     Page d’accueil
     Pages de menu (x4)
 
-Animation
+# Animation
 
 Boutons
 
